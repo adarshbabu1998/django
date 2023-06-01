@@ -9,7 +9,21 @@
         <p>
             wrjhfgrhgfgerg
         </p>
+        {% for i in sdata %}
 
+        <h3>{{i.indx}}</h3>
+        <h3>{{i.name}}</h3>
+
+        {% endfor %}
+        <hr>
+
+        {% for u in sstudents %}
+
+        <h4>{{u.roll_no}}</h4>
+        <h4>{{u.standard}}</h4>
+        <h4>{{u.sname}}</h4>
+        {% endfor %}
+         
         <img class="pic" src="{% static 'images/img.jpg' %}" alt="">
     </body>
-    </html>
+    </html> 

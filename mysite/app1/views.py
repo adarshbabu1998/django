@@ -1,15 +1,13 @@
 from django.shortcuts import render
-
-from django.urls import path,include
-
-urlpatterns = [
-   
-    path('',include('app1.urls'))
-]
+from . models import school,students
 
 
 def home(request):
-    return render(request,'home.html')
+    d={
+        'sdata': school.objects.all(),
+        'sstudents':students.objects.all()
+    }
+    return render(request,'home.html',d)
 
 
 # Create your views here.
