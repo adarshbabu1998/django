@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/homes.css' %}">
+    </head>
+
+    <body>
+        <p class="home">
+            An off-road vehicle (ORV), sometimes referred to as an overland or adventure vehicle, <br>is considered to be any type of vehicle which is capable of driving off paved or gravel surfaces,<br> such as trails and forest roads that have rough and low traction surfaces. 
+        </p>
+        {% for x in data %}
+
+        <h3>{{x.veh}}</h3>
+        <h3>{{ x.color }}</h3>
+        <h3>{{ x.indx }}</h3>
+
+        {% endfor %}
+    </body>
+</html>
