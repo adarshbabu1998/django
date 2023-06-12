@@ -8,7 +8,13 @@ def homepage(request):
     return render(request,'home.html',g)
 
 def defe(request):
-    return render(request,'defender.html')
+     s={
+        'fields': pictures.objects.all()
+        }
+     return render(request,'defender.html',s)
+
+def wrangler(request):
+    return render(request,'wrangler.html')
 
 
 

@@ -4,3 +4,5 @@ class vehicle(models.Model):
     color=models.CharField(max_length=30)
     indx=models.IntegerField()
 # Create your models here.
+class pictures(models.Model):
+    p=models.ImageField(upload_to='mypics/')

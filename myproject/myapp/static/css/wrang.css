@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: rgb(28, 194, 91);
+    background-image: url("static/images/w1.jpg");
+}
+.img2{
+    opacity: 80%;
+    background-repeat: no-repeat;
+    
+}
