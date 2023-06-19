@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static  'css/first.css' %}">
+    </head>
+    <body>
+
+        {% for i in fields %}
+       <img src="{{i.img.url}}" alt="1">
+        {%endfor%}
+        
+        <p>dolor sit amet consectetur adipisicing elit. Commodi saepe, neque error iure quas dolorum, consequatur inventore in quos facere sunt a? Laborum cupiditate quidem eius cum officiis est dicta.
+
+        </p>
+    </body>
+</html>
