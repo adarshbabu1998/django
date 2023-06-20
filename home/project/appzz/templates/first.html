@@ -5,10 +5,12 @@
         <link rel="stylesheet" href="{% static  'css/first.css' %}">
     </head>
     <body>
-
-        {% for i in fields %}
-       <img src="{{i.img.url}}" alt="1">
-        {%endfor%}
+        {% for u in dwnl %}
+        <h3>{{u.title}}</h3>
+       
+        <a href="{{u.pdf.url}}">download here</a>
+        <img src="{{u.image.url}}" alt="" width="200px">
+        {% endfor %}
         
         <p>dolor sit amet consectetur adipisicing elit. Commodi saepe, neque error iure quas dolorum, consequatur inventore in quos facere sunt a? Laborum cupiditate quidem eius cum officiis est dicta.
 
