@@ -1,0 +1,19 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="{% static  'css/apz.css' %}">
+</head>
+<body>
+    <h1>homepage</h1>
+    {% for i in dwnl %}
+    <h1>{{ i.title }}</h1>
+    <a href="{{i.pdf.url}}">download here</a>
+    <img src="{{i.pics.url}}" alt="" width="200px">
+    <a href="{{i.pics.url}}">pic dwnld</a>
+    {%endfor%}
+
+</body>
+</html>
