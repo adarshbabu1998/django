@@ -1,0 +1,31 @@
+.thnx{
+    background-color: rgb(194, 167, 131);
+    color: rgb(23, 24, 23);
+    text-shadow: 2px;
+    text-decoration-line: underline;
+    text-justify: distribute;
+}
+.a{
+    font-size: 30px;
+    color: rgb(87, 114, 114);
+    margin-left: 700px;
+}
+ 
+.b{
+    font-size: 30px;
+    color: rgb(87, 114, 114);
+    margin-left: 700px;
+   
+
+}
+.c{
+    font-size: 30px;
+    color: rgb(87, 114, 114);
+    margin-left: 700px;
+ 
+}
+.but{
+    color: red;
+    background-color: black;
+    margin-left: 1000px;
+}

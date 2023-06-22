@@ -17,5 +17,15 @@ def upload(request):
             return redirect(home)
     return render(request,'file.html',{"form":form})
 
+def add(request):
+    if request.method=='POST':
+        name=request.POST.get('user_name')
+        email=request.POST.get('user_email')
+        msg=request.POST.get('message')
 
+        obj= formdata(uname=name,em=email,feedback=msg)
+        obj.save()
+        return render (request,'thanks.html')
+    return render(request,'form.html')
+    
 # Create your views here.

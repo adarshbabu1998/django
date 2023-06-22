@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static  'css/thnx.css' %}">
+    </head>
+    <body>
+        
+        <form  enctype="multipart/form-data" action="" method="post">
+            {% csrf_token %}
+            <label class="a" for="">username</label>
+            <input type="text" name="user_name" placeholder="username" required/>
+            <br>
+            <label class="b" for="">Email_id</label>
+            <input type="email" name="user_email" placeholder="enter your email" required/>
+            <br>
+            <label class="c" for="">feedback</label>
+            <input type="text" name="message" placeholder="enter your feedback" required/>
+            <br>
+            <a href=""><button class="but" type="submit">SUBMIT</button> </a>
+        </form>
+
+
+    </body>
+</html>

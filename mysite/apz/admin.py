@@ -4,5 +4,6 @@ from . models import *
 
 
 admin.site.register(book)
+admin.site.register(formdata)
 
 # Register your models here.
