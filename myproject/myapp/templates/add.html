@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <form enctype="multipart/form-data"action="" method="post">
+        {% csrf_token %}
+        <input type="number" name="No">
+        <input type="text" name="name" placeholder="enter name"
+        required/>
+        <input type="text" name="course" placeholder="enter course"
+        required/>
+        <button type="submit">ADD</button>
+
+    </form>
+        
+
+
+
+
+    </form>
+    
+</body>
+</html>
