@@ -1,4 +1,4 @@
-{%load static %}
+{% load static %}
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="{% static  'css/home.css' %}">
@@ -6,6 +6,14 @@
 </head>
 <body>
     <h1>welcome</h1>
+
+    {% for kl in save %}
+
+    <p>{{kl.indx}}</p>  
+    <p>{{kl.sname}}</p>
+    <a href="{% url 'delete' s_id=kl.id %}"><button>delete</button></a>
+    {% endfor %}
+  
     
 </body>
 </html>
