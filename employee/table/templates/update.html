@@ -1,4 +1,4 @@
-
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +8,13 @@
     
 
 
-<form enctype="multipart/form-data" action="" method="post">
+<form enctype="multipart/form-data" action="{% url 'edit' s_id=ed.id %}" method="post">
     {% csrf_token %}
-    <input type="number" name="eid" placeholder="enter id" required/>
-    <input type="text" name="name" placeholder="enter name" required/>
+    <input type="number" name="eid" value="{{ed.eid}}" placeholder="enter id" required/>
+    <input type="text" name="name" value="{{ed.name}}" placeholder="enter name" required/>
   
-    <input type="text" name="address" placeholder="enter address" required/>
-    <a href=""><button type="submit">SUBMIT</button></a>
+    <input type="text" name="address" value="{{ed.address}}" placeholder="enter address" required/>
+    <a href=""><button type="submit" value="post">update</button></a>
 </form> 
 
 </body>

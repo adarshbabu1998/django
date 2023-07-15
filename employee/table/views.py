@@ -23,9 +23,10 @@ def add(request):
 def delete(request,s_id):
     field_del_var=employee.objects.get(id=s_id)
     field_del_var.delete()
-    return redirect(homepage)
+    return redirect(homepage) 
 
 def edit(request,s_id):
+    ed=employee.objects.get(id=s_id)
     if request.method=="POST":
         no=request.POST.get('eid')
         n=request.POST.get('name')
@@ -33,6 +34,7 @@ def edit(request,s_id):
 
         employee.objects.filter(id=s_id).update(eid=no,name=n,address=a)
         return redirect(homepage)
-    return render(request,'home.html',{'ed':ed})
+    
+    return render(request,'update.html',{'ed':ed})
 
 # Create your views here.
