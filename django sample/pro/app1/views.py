@@ -84,7 +84,7 @@ def reg(request):
                     return redirect(loginpage)
             else:
                 print("wrong password")
-    return render (request,'login.html')
+    return render (request,'reg.html')
 
 
 def loginpage(request):
@@ -101,7 +101,7 @@ def loginpage(request):
             else:
                 print('user not exists')
                 return redirect(reg)
-    return render(request,'reg.html')
+    return render(request,'login.html')
 
 
 @login_required
